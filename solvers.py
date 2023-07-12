@@ -20,12 +20,12 @@ import pandas as pd
 
 # MCMC (HMC) sampling routines
 
-mcmc_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "HMC_amazon_project/mcmc")
+mcmc_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "src/mcmc")
 if mcmc_path not in sys.path: sys.path.append(mcmc_path)
 from mcmc_sampling import create_hmc_sampler
 
 # Data Hanlder (.data_handlers.load_site_data)
-sys.path.append(os.path.abspath("HMC_amazon_project"))
+sys.path.append(os.path.abspath("src"))
 from data_handlers import load_site_data
 
 
